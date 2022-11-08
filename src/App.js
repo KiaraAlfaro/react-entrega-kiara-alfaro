@@ -13,9 +13,11 @@ function App() {
       
       <NavBar/>
 
-      <ItemListContaainer greetingWelcom={(true)} greeting={(false)} color={"blue"} letra={'30px'}/>
+      <ItemListContaainer greetingWelcom={(true)} greeting={(false)} color={"blue"} letra={'30px'} boton={(false)}/>
       <Body/>
-      <ItemListContaainer greetingWelcom={(false)} greeting={(true)} color={"red"}/>
+      <ItemListContaainer greetingWelcom={(false)} greeting={(false)} boton={(true)}/>
+      <ItemListContaainer greetingWelcom={(false)} greeting={(true)} color={"red"} boton={(false)}/>
+
 
       <Footer fondo={"#31AAC1"} ubicacion={"center"} />
        
