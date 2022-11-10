@@ -1,20 +1,22 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Stack from '@mui/material/Stack';
 import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
+import ItemList from "./ItemList";
+import Data from "../data/data.json";
 
-
-export default function ItemListContaainer ({ greetingWelcom,greeting,color,letra, boton}){
+export default function ItemListContaainer ({ greetingWelcom,greeting,color,letra, boton,catalogo,productos}){
 
     const [cont, setCont] = useState(0);
-    const stock = 15;
 
     const onAdd = (cantidad) =>{
 
         alert(`Agregaste al carrito: ${cantidad}`)
     }
+
+   
 
     return(
         
@@ -61,6 +63,10 @@ export default function ItemListContaainer ({ greetingWelcom,greeting,color,letr
                 </Stack>
 
             </div>:""}
+
+            {catalogo? <ItemList/>:""}
+
+
 
         </div>
     )

@@ -1,0 +1,26 @@
+.container{
+
+    width:70% ;
+    margin: auto;
+}
+
+.detail{
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detailImg{
+
+    width: 200px;
+    height: 200px;
+}
+
+.contenido{
+
+    width: 100%;
+}
+
