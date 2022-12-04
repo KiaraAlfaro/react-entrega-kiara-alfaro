@@ -1,36 +1,38 @@
 
 import './App.css';
-import ItemListContaainer from './Components/ItemListContainer';
-import NavBar from './Components/NavBar';
-
-import Footer from './Components/Footer';
-import ItemDetailContainer from './Components/ItemDetailContainer';
+import NavBar from './Components/nav/NavBar';
+import React from 'react';
+import Footer from './Components/footer/Footer';
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ItemList from './Components/ItemList';
+import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './Components/itemDetailContainer/ItemDetailContainer';
+import Cart from './Components/Cart/Cart';
+
+import CartProvider from './context/CartContext';
+import Checkout from './Components/checkout/Checkout';
 
 function App() {
   return (
-    
+     
 
-    <BrowserRouter>
-      
+    <BrowserRouter>     
+      <CartProvider>
+        <NavBar/>
+          <Routes>
 
-      <NavBar/>
+            <Route path='/' element={<ItemListContainer/>} />
+            <Route path='/categoria/:categoriaId' element={<ItemListContainer/>} />
+            <Route path='/detalle/:detalleId' element={<ItemDetailContainer/>} />
+            <Route path='/Cart' element={<Cart/>} />
+            <Route path='/checkout' element={<Checkout/>} />
+            
+          </Routes>
+          </CartProvider>   
+        <Footer  ubicacion={"center"} />
+     
+    </BrowserRouter>
 
-      <Routes>
-
-          <Route path='/' element={<ItemListContaainer greetingWelcom={(true)} greeting={(false)} boton={(false)} catalogo = {(false)} />} />
-          <Route path='/productos' element={<ItemListContaainer greetingWelcom={(false)} greeting={(false)} boton={(false)} catalogo = {(true)} />}/>
-          <Route path='/categoria/:idcategoria' element={<ItemList/>} />
-          
-
-      </Routes>
-
-
-      <Footer fondo={"#31AAC1"} ubicacion={"center"} />
-       
-      </BrowserRouter>
   );
 }
 

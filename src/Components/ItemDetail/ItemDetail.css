@@ -1,26 +1,68 @@
-.container{
+.detalle{
 
-    width:70% ;
-    margin: auto;
-}
-
-.detail{
-
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    width: 100%;
+    color: white;
+    width: 1000px;
+    height: 450px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
 }
 
-.detailImg{
+.info{
 
-    width: 200px;
-    height: 200px;
+    display: flex;
+    flex-direction: column !important;
+    text-align: center;
+    width: 350px;
+    margin-left: 150px;
 }
 
-.contenido{
+.tituloDetalle{
+   
+    font-size: 40px !important;
+    text-transform: uppercase;
+}
+.imgDetalle{
 
-    width: 100%;
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
 }
 
+.contador{
+
+    height: 50px;
+
+   
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root{
+
+    background-color:  #6d1b7b !important;
+    border-color: #ffffffc2 !important;
+} 
+
+
+.css-ke5b6m-MuiButtonBase-root-MuiButton-root{
+
+    background-color: #6d1b7b !important;
+    padding: 5px !important;
+    margin-top: 10px !important;
+    margin-left: 80px !important;
+    
+}
+
+.terminar{
+
+    margin-left: 100px !important;
+}
+.seguir{
+
+    margin-left: 85px !important;
+}

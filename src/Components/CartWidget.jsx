@@ -4,6 +4,9 @@ import Badge from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Link } from "react-router-dom";
+
+import { useCartContext } from "../context/CartContext";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
@@ -15,11 +18,16 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 export default function CartWidget() {
+
+  const {totalProducts} = useCartContext();
     return (
-      <IconButton aria-label="cart">
-      <StyledBadge badgeContent={4} color="secondary">
-        <ShoppingCartIcon />
-      </StyledBadge>
-      </IconButton>
+
+      <Link to='/Cart'>
+        <IconButton aria-label="cart">
+        <StyledBadge badgeContent={<span>{totalProducts() || '' }</span>} color="secondary">
+          <ShoppingCartIcon />
+        </StyledBadge>
+        </IconButton>
+      </Link>
     );
   }

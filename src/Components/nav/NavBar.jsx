@@ -10,19 +10,21 @@ import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
-import CartWidget from './CartWidget';
+import CartWidget from '../CartWidget';
 
 import { Link } from 'react-router-dom';
 
-import HouseSidingRoundedIcon from '@mui/icons-material/HouseSidingRounded';
+import './nav.css';
+
+import AlignHorizontalRightTwoToneIcon from '@mui/icons-material/AlignHorizontalRightTwoTone';
 
 const pages = [
   
   {label:"Home",link:"/"},
-  { label:"Productos",link:"/productos"}, 
-  { label:"Muros",link:"/categoria/muros"}, 
-  {label:"Losa",link:"/categoria/losa"}
-
+  { label:"Ropa",link:"/categoria/ropa"}, 
+  {label:"Juguetes",link:"/categoria/juguetes"},
+  {label:"Comida",link:"/categoria/comida"}
+  
 ];
 
 function ResponsiveAppBar() {
@@ -45,10 +47,10 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <HouseSidingRoundedIcon />
+          <AlignHorizontalRightTwoToneIcon />
 
           <Typography
             variant="h6"
@@ -65,7 +67,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            ARKI
+           CATSKI
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -101,7 +103,7 @@ function ResponsiveAppBar() {
                 <MenuItem key={page.label} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
                     
-                    <a href={page.link}>{page.label}</a>
+                    <Link to={page.link}>{page.label}</Link>
 
                   </Typography>
                 </MenuItem>
@@ -137,7 +139,7 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-               <Link to={page.link}>{page.label}</Link>
+               <Link className='link' to={page.link}>{page.label}</Link>
               </Button>
             ))}
           </Box>

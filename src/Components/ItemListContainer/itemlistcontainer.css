@@ -1,0 +1,9 @@
+
+.productos{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,450px);
+    margin-left: 10%;
+    margin-top: 50px;
+}

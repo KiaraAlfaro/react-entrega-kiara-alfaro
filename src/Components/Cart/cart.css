@@ -1,0 +1,51 @@
+.botonTotal{
+    margin-bottom: 30px !important;
+    background-color: rgba(0, 0, 0, 0.459);
+    color: white;
+    font-weight: bolder;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px !important;
+ 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.nombreTotal{
+
+   width: 77%;
+   margin-left: 30px;
+}
+
+.botones{
+
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+   
+    margin-left: 35%;
+}
+
+.noProductos{
+
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.masCompras{ margin-left: 60%;}
+.cartel{margin-top: 15px;}
+.agregar{
+
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    width: 140px;
+    border-radius: 10px;
+    margin: 0% !important;
+}

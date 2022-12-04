@@ -1,0 +1,46 @@
+.cards{
+ 
+    color: white;
+    width: 200px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 30px;
+    border-radius: 20px;
+     
+}
+
+h3,h4{
+    margin: 0%;
+    padding: 5px;
+}
+.img{
+
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.contador{
+
+    height: 50px;
+
+   
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root{
+
+    background-color:  #6d1b7b !important;
+} 
+
+
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root{
+
+    background-color: #6d1b7b !important;
+    color: white !important;
+    margin-left: 25% !important;
+}
