@@ -8,9 +8,6 @@ import { getFirestore,collection, getDocs,query,where } from "firebase/firestore
 export default function ItemListContainer (){
  
    
-    
-    
-      
     const [arrayDeProductos, setArrayDeProductos] = useState([]);
 
     const{categoriaId} = useParams();

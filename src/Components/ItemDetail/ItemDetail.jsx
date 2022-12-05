@@ -5,11 +5,7 @@ import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Stack from '@mui/material/Stack';
-
-import ItemCount from '../itemCount/ItemCount';
-
 import { useState,useEffect } from "react";
-
 import { useCartContext } from "../../context/CartContext";
 
 

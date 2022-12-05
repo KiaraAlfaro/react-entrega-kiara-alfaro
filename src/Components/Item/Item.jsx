@@ -1,17 +1,10 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { useState,useEffect} from "react";
-
 import './item.css';
-
-import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
 import Stack from '@mui/material/Stack';
 
-import { styled } from '@mui/material/styles';
-import { blue, purple } from '@mui/material/colors';
 
 
 export default function Item({product}) {

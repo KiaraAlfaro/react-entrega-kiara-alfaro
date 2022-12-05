@@ -1,0 +1,14 @@
+ .imgResumen{
+
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+ }
+ .cardsResumen{
+
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    margin-bottom: 20px;
+ }

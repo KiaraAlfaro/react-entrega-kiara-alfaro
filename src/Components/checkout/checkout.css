@@ -1,0 +1,86 @@
+.seccionDatos{
+
+    display: flex;
+    flex-direction: row;
+  
+    margin-left: 100px;
+    
+}
+.titulo{
+
+    font-size: 20px;
+    color: white;
+    margin: 0% !important;
+    margin-bottom: 20px !important;
+
+    font-weight: bolder;
+}
+
+.formulario{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 30px;
+    border-radius: 20px;
+    width: 280px;
+}
+
+                            
+.form2{
+
+    margin-bottom: 20px;
+}
+.confirmar{
+    margin-left: 35px !important;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    width: 200px;
+}
+.resumen{
+
+    width: 550px !important;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 300px;
+    color: white;
+    overflow: auto;
+}
+
+.tituloResumen{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root{
+
+    color: white !important;
+}
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+
+    color: rgba(255, 255, 255, 0.301) !important;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+
+    border-color: white !important;
+}
+
+.msjFinal{
+
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.459) ;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.btnSeguir{
+
+    margin-left: 34%;
+    margin-top: 30px;
+}
