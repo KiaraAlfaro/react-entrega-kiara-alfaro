@@ -14,6 +14,12 @@ export default function  ItemDetail ({product}) {
     const [irCarrito,setIrCarrito]=useState(false)
     const [cont, setCont] = useState(1);
 
+    //const stocks = product.productos;
+    //const [stock, setStock] = useState(stocks);
+
+  //  console.log(stock)
+
+
     const {addProduct} = useCartContext();
 
     const onAdd = (cantidad) =>{
@@ -21,7 +27,7 @@ export default function  ItemDetail ({product}) {
       setIrCarrito(true);
       addProduct (product,cantidad)
     }
-
+ 
    
         
     return(
@@ -57,18 +63,25 @@ export default function  ItemDetail ({product}) {
 
                     onClick = {() => {
 
-                        if(cont>=1 & cont< `${product.productos}` ){setCont(cont+1)}
+                        if(cont>=1 & cont< `${product.productos}` ){
+                            
+                            setCont(cont+1);
+                           // setStock(stock-1)
+                        
+                        }
 
                     }}
                     >+</Button>
 
-                    <Button>{cont}</Button>
+                    <Button>{cont} </Button>
 
                     <Button
 
                     onClick = {() => {
 
-                        if (cont>1 & cont<=`${product.productos}`){setCont(cont-1)}
+                        if (cont>1 & cont<=`${product.productos}`){setCont(cont-1); 
+                            //setStock(stock+1)
+                         }
                         
                     }} 
                     >-</Button>

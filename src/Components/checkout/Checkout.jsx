@@ -70,7 +70,7 @@ export default function Cart ({product}){
                 </Link>
                 
                 </div> )
-            :
+            : 
 
             ( 
 

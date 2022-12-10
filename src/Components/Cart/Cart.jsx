@@ -18,11 +18,11 @@ export default function Cart ({product}){
                 <div className="noProductos">
 
                     <h3 className="cartel"> No hay productos en el carrito!</h3>
-                    <Link to='/' className="masCompras">
+                    <Link to='/' >
             
                         <Stack direction="row" spacing={2} >
                 
-                            <Button >
+                            <Button className="masCompras">
                                 Hacer Compras <AddShoppingCartTwoToneIcon/>
                             </Button>
             
@@ -35,7 +35,7 @@ export default function Cart ({product}){
 
     return(
 
-        
+         
         <div >
 
             {

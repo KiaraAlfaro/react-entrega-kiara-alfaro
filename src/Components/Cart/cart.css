@@ -39,8 +39,12 @@
     display: flex;
     flex-direction: row;
 }
+.cartel{
 
-.masCompras{ margin-left: 60%;}
+    width: 80%;
+ 
+ }
+
 .cartel{margin-top: 15px;}
 .agregar{
 
@@ -49,3 +53,61 @@
     border-radius: 10px;
     margin: 0% !important;
 }
+
+
+@media(max-width:590px){
+
+ 
+
+    .noProductos{
+        
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 40px;
+    }
+
+}
+
+@media(max-width:515px){
+
+    .botonTotal{
+      font-size: 10px;
+        
+    }
+
+    .nombreTotal{
+
+        width: 70%;
+     }
+
+     .agregar{
+        font-size: 10px !important;
+     }
+     .seguir{
+        font-size: 10px !important;
+     }
+
+     .botones{
+        margin-left: 60px;
+        }
+   
+       .cartel{
+   
+           font-size: 15px;
+       
+       }
+
+}
+
+
+
+@media(max-width:340px){
+
+   
+
+     .masCompras{
+        font-size: 12px !important;
+     }
+
+}
+

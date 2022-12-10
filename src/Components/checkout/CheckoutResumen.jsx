@@ -5,7 +5,7 @@ import './resumen.css';
 export default function CheckoutResumen ({product}){
 
    
-
+ 
     return(
  
         

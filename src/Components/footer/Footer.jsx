@@ -12,4 +12,4 @@ export default function Footer ({fondo,ubicacion}){
             
         </div>
     )
-}
+} 

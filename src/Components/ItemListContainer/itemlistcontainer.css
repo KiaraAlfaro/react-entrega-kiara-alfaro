@@ -7,3 +7,28 @@
     margin-left: 10%;
     margin-top: 50px;
 }
+
+@media(max-width:946px){
+
+.productos{
+
+    margin-left: 15%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(9,450px);
+}
+
+}
+
+@media(max-width:740px){
+
+    .productos{
+    
+        margin-left: 10%;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(18,450px);
+        width: 80%;
+        margin-left: 10%;
+        justify-items: center;
+    }
+    
+    }

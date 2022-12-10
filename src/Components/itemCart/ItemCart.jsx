@@ -12,10 +12,12 @@ export default function ItemCart ({product}){
 
     return(
  
-        
+         
         <div className="cardsItem">
 
             <img className="imgCart" src={product.img} alt="" />
+
+            
             <div className="itemInfo">
                 <h3>Producto</h3>
                 <h4>{product.nombre}</h4>
