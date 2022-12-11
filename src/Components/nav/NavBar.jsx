@@ -50,7 +50,7 @@ function ResponsiveAppBar() {
     <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AlignHorizontalRightTwoToneIcon />
+          
 
           <Typography
             variant="h6"
@@ -67,7 +67,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-           CATSKI
+          <AlignHorizontalRightTwoToneIcon /> CATSKI
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -128,7 +128,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            CATSKI
+          <AlignHorizontalRightTwoToneIcon />  CATSKI
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
