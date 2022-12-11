@@ -4,7 +4,8 @@ import TextField from '@mui/material/TextField';
 import { useCartContext } from "../../context/CartContext";
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
-import {addDoc,collection,getFirestore} from 'firebase/firestore';
+import {addDoc,doc,updateDoc,collection,getFirestore} from 'firebase/firestore';
+import { increment } from 'firebase/firestore';
 import './checkout.css'; 
 import { Link } from 'react-router-dom';
 import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
@@ -22,6 +23,18 @@ export default function Cart ({product}){
 
     const {cart, totalPrecio,clearCart} = useCartContext();
 
+    function validateEmail (email){
+
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if(reg.test(email)== false){
+
+            alert('E-mail NO valido')
+            return false;
+        }
+        return true;
+    }
+
     function final(){
 
         const order = {
@@ -34,12 +47,28 @@ export default function Cart ({product}){
       
         const db = getFirestore();
         const orders = collection(db,'orders');
-        addDoc(orders,order)
 
-        .then(({id}) =>{
+        if(!name || !email || !tel){
+
+            alert('Complete el formulario')
+            return
+        }
+        if(validateEmail(email)== false){
+            return
+        }
+
+
+
+        addDoc(orders,order).then(({id}) =>{
 
             setOrderId(id);
             clearCart();
+
+            cart.forEach((item)=>{
+
+                const documento = doc(db, 'productos', item.id);
+                updateDoc(documento,{productos: increment(-item.quantity)});
+            })
         }) ;
     
         
